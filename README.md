@@ -1,50 +1,51 @@
-# React + TypeScript + Vite
+<a id="readme-top"></a>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### About
+This web application presents a user-friendly table that displays a list of users, including their name, username, email, and phone number. The data is dynamically fetched from a mock API and displayed in a clean, functional layout.
 
-Currently, two official plugins are available:
+### Demo
+[DEMO LINK](https://user-management-rho.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### How to use
+To run this project yoy need:
+  1. Clone this repo:
 
-## Expanding the ESLint configuration
+    `git clone https://github.com/OSpyrydonov/user-management.git`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+  2. Open this repo on your IDE:
 
-- Configure the top-level `parserOptions` property like this:
+    `code user-management`
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+  4. Istall depedencies:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+    `npm i`
+    
+or
+    
+    `npm install`
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+  5. Start the project:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+    `npm start`
+
+### Stack used:
+* [![React][React.js]][React-url]
+* [![React][TypeScript]][TypeScript-url]
+* [![React][ReduxToolkit]][ReduxToolkit-url]
+
+### Contact
+
+[Telegram](https://t.me/Oleksandr_Spyrydonov)
+
+[LinkedIn](https://www.linkedin.com/in/oleksandr-spyrydonov-b42084323/)
+
+spyrydonov.oleksandr@gmail.com
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[TypeScript]: https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=flat-square
+[TypeScript-url]: https://www.typescriptlang.org/
+[ReduxToolkit]: https://img.shields.io/badge/Redux/toolkit-v1.8.1-blue
+[ReduxToolkit-url]: https://redux-toolkit.js.org/

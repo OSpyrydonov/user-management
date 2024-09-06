@@ -1,25 +1,27 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
-import { UsersState } from '../../types';
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import axios from "axios";
+import { UsersState } from "../../types";
 
 const initialState: UsersState = {
   users: [],
-  status: 'idle',
+  status: "idle",
   filters: {
-    name: '',
-    username: '',
-    email: '',
-    phone: '',
+    name: "",
+    username: "",
+    email: "",
+    phone: "",
   },
 };
 
-export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
-  const response = await axios.get('https://jsonplaceholder.typicode.com/users');
+export const fetchUsers = createAsyncThunk("users/fetchUsers", async () => {
+  const response = await axios.get(
+    "https://jsonplaceholder.typicode.com/users"
+  );
   return response.data;
 });
 
 const usersSlice = createSlice({
-  name: 'users',
+  name: "users",
   initialState,
   reducers: {
     setFilter: (state, action) => {
@@ -29,14 +31,14 @@ const usersSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchUsers.pending, (state) => {
-        state.status = 'loading';
+        state.status = "loading";
       })
       .addCase(fetchUsers.fulfilled, (state, action) => {
-        state.status = 'idle';
+        state.status = "idle";
         state.users = action.payload;
       })
       .addCase(fetchUsers.rejected, (state) => {
-        state.status = 'failed';
+        state.status = "failed";
       });
   },
 });

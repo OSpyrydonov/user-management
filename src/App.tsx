@@ -1,7 +1,7 @@
-import React from 'react';
-import UserTable from './features/users/UserTable';
-import { Provider } from 'react-redux';
-import { store } from './store';
+import React from "react";
+import UserTable from "./features/users/UserTable";
+import { Provider } from "react-redux";
+import { store } from "./store";
 
 const App: React.FC = () => {
   return (
