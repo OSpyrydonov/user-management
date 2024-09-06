@@ -2,6 +2,8 @@
 
 ### About
 This web application presents a user-friendly table that displays a list of users, including their name, username, email, and phone number. The data is dynamically fetched from a mock API and displayed in a clean, functional layout.
+![image](https://github.com/user-attachments/assets/e43d16cc-7d71-494f-8405-1ef4a3cb1a26)
+
 
 ### Demo
 [DEMO LINK](https://user-management-rho.vercel.app/)
